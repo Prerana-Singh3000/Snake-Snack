@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: url(b4.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: radial-gradient(rgb(255, 255, 89),rgb(0, 110, 0));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreBoard{
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+    font-size: 4vh;
+    font-family: 'Koh Santepheap', cursive;
+    background-color: rgb(255, 0, 0);
+    padding: 1vmin;
+    color: yellow;
+    border-radius: 2vmin;
+    border: 1vmin solid yellow;
+}
+
+#highScoreBoard{
+    position: absolute;
+    top: 4vh;
+    left: 7vw;
+    font-size: 4vh;
+    font-family: 'Koh Santepheap', cursive;
+    background-color: rgb(255, 0, 0);
+    padding: 1vmin;
+    color: yellow;
+    border-radius: 2vmin;
+    border: 1vmin solid yellow;
+}
+
+.head{
+    background: radial-gradient(rgb(185, 116, 253), #663399);
+    border: 0.5px solid black;
+    transform: scale(1.02);
+    border-radius: 5px;
+
+}
+
+.snake{
+    background-color: rgb(163, 73, 163);
+    border: 0.25vmin solid purple;
+    border-radius: 4px;
+}
+
+.food{
+    background: radial-gradient(yellow, rgb(255, 145, 0));
+    border-radius: 5px;
+    transform: scale(0.75);
+}
